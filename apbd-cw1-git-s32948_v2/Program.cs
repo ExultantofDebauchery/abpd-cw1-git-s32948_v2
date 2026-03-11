@@ -2,3 +2,4 @@
 
 Console.WriteLine("Hello, World!");
 Console.WriteLine("feature1");
+Console.WriteLine("CHyba działa");
