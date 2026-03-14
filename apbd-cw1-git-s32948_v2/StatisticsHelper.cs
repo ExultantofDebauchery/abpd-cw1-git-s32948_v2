@@ -11,4 +11,15 @@ public class StatisticsHelper
         }
         return  (double) sum / numbers.Length;
     }
+
+    public static double CalculateAverage(int[] numbers)
+    {
+        if(numbers==null) return 0;
+        double sum = 0;
+        foreach (var VARIABLE in numbers)
+        {
+            sum += VARIABLE;
+        }
+        return sum / numbers.Length;
+    }
 }
