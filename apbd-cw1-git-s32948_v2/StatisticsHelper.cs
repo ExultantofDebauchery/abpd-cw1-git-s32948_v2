@@ -9,6 +9,6 @@ public class StatisticsHelper
         {
             sum += n;
         }
-        return sum / numbers.Length;
+        return  (double) sum / numbers.Length;
     }
 }
