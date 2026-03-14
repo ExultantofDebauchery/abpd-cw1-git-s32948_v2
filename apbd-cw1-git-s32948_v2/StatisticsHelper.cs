@@ -22,4 +22,15 @@ public class StatisticsHelper
         }
         return sum / numbers.Length;
     }
+
+    public static int CalculateMax(int[] numbers)
+    {
+        if(numbers==null) return 0;
+        int max = numbers[0];
+        foreach (var VARIABLE in numbers)
+        {
+            if(VARIABLE > max) max = VARIABLE;
+        }
+        return max;
+    }
 }
