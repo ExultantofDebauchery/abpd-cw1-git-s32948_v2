@@ -12,6 +12,7 @@ class Program
             int[] numbers = line.Split(',').Select(x => int.Parse(x)).ToArray();
             double avg = StatisticsHelper.Average(numbers);
             Console.WriteLine("Srednia: " + avg);
+            Console.WriteLine("Min: "+StatisticsHelper.CalculateMin(numbers));
         }
         catch (FormatException e)
         {
