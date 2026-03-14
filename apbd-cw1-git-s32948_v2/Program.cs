@@ -5,11 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Daj liczby rozdzielone spacja: ");
+        Console.WriteLine("Daj liczby rozdzielone przecinkami: ");
         try
         {
             string line = Console.ReadLine();
-            int[] numbers = line.Split(' ').Select(x => int.Parse(x)).ToArray();
+            int[] numbers = line.Split(',').Select(x => int.Parse(x)).ToArray();
             double avg = StatisticsHelper.Average(numbers);
             Console.WriteLine("Srednia: " + avg);
         }
