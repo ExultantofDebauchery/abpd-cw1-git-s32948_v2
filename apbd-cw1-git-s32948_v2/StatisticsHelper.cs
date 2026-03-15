@@ -27,9 +27,9 @@ public class StatisticsHelper
     {
         if(numbers==null) return 0;
         int max = numbers[0];
-        foreach (var VARIABLE in numbers)
+        foreach (int number in numbers)
         {
-            if(VARIABLE > max) max = VARIABLE;
+            if(number > max) max = number;
         }
         return max;
     }
